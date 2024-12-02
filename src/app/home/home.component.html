@@ -1,0 +1,23 @@
+<p>home works!</p>
+<input type="text" [(ngModel)]="fullName" />
+<input type="text" [(ngModel)]="email" />
+<button value="submit" name="submit" (click)="submitOnClick()">Submit</button>
+<hr>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Action</th>
+  </tr>
+  <tr *ngFor="let user of userList">
+    <td>
+      {{user.fullname}}
+    </td>
+    <td>
+      {{user.email}}
+    </td>
+    <td>
+      <button value="submit" name="submit">Delete</button>
+    </td>
+  </tr>
+</table>
